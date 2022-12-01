@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc --outDir build/"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,6 @@
   "homepage": "https://github.com/kdamball/aoc-22#readme",
   "devDependencies": {
     "typescript": "^4.9.3"
-  }
+  },
+  "dependencies": {}
 }
