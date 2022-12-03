@@ -2257,7 +2257,7 @@ const cleanInput = (input: string) => {
 
 const elfLoads = cleanInput(input).map(load => load.reduce(sum, 0));
 const sortedElfLoads = [...elfLoads].sort((a,b) => a < b ? 1 : (a > b ? -1 : 0));
-const richestElf = sortedElfLoads[0];
-const totalLoad3RichestElves = sortedElfLoads.slice(0,3).reduce(sum, 0);
+export const richestElf = sortedElfLoads[0];
+export const totalLoad3RichestElves = sortedElfLoads.slice(0,3).reduce(sum, 0);
 
 console.log(richestElf, totalLoad3RichestElves);
