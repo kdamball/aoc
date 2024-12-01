@@ -40,37 +40,6 @@ Card 6: 31 18 13 56 72 | 74 77 10 23 35 67 36 11`)
       go to original array and get # of wins from that
         - go thru each of the wins
         - go to original deck and grab # of wins
-      
-      1
-        2
-          3
-            4
-              5
-            5
-          4
-            5
-        3
-          4
-            5
-          5
-        4
-          5
-        5
-      2
-        3
-          4
-            5
-          5
-        4
-          5
-      3
-        4
-          5
-        5
-      4
-        5
-      5
-      6
     */ 
     const cardWins = input.map((card, ind) => {
       const winning = card[0].trim().split(/\s+/).map(el => Number(el.trim()));
@@ -80,13 +49,13 @@ Card 6: 31 18 13 56 72 | 74 77 10 23 35 67 36 11`)
         winning.includes(num) ? cardScore +=1 : undefined
       });
       return {[ind]: cardScore}
-    }, 0);
+    });
 
     let total = 0
 
     // we can do some tail call caching here to optimize ;p
     const recursiveCountCards = (arr: {[x: number]: number; }[]) => {
-      return arr.map(el => {
+      return arr.forEach(el => {
         const elindex = Number(Object.keys(el)[0]) + 1
         const wonCards = cardWins.slice(elindex, elindex + Object.values(el)[0])
         total += 1
