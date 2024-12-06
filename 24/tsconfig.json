@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "lib": ["es2022", "DOM"],
-    "outDir": "build",
+    "outDir": "./build",
     "downlevelIteration": true,
     "target": "ES2023",
     "module": "NodeNext",

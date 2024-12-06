@@ -1,4 +1,4 @@
-import { cleanInput } from "./utils";
+import { cleanInput } from "../utils";
 
 const input = `R 5
 U 8

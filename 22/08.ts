@@ -1,4 +1,4 @@
-import { cleanInput } from "./utils";
+import { cleanInput } from "../utils";
 
 const input = `30373
 25512

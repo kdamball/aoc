@@ -1,4 +1,4 @@
-import { cleanInput } from "./utils";
+import { cleanInput } from "../utils";
 
 const input = `2-4,6-8
 2-3,4-5

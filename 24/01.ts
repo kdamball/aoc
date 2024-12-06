@@ -1,4 +1,4 @@
-import { cleanInput, sortNumber } from "./utils";
+import { cleanInput, sortNumber } from "../utils";
 
 // part 1
 {

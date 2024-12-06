@@ -1,4 +1,4 @@
-import { cleanInput } from "./utils"
+import { cleanInput } from "../utils"
 
 // part 1
 {

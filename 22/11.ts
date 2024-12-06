@@ -1,4 +1,4 @@
-import { sortNumber } from './utils';
+import { sortNumber } from '../utils';
 
 const input = `Monkey 0:
 Starting items: 79, 98

@@ -1,4 +1,4 @@
-import { cleanInput, sum } from "./utils";
+import { cleanInput, sum } from "../utils";
 
 // part 1
 {
